@@ -7,6 +7,7 @@
         [ "modifyvm", "{{.Name}}", "--vram", "48" ],
         [ "modifyvm", "{{.Name}}", "--cpus", "2" ]
       ],
+      "disk_size": 81920,
       "guest_additions_mode": "{{ user `guest_additions_mode` }}",
       "guest_additions_path": "C:/users/vagrant/VBoxGuestAdditions.iso",
       "guest_os_type": "Windows2012_64",
@@ -17,7 +18,7 @@
       "communicator": "winrm",
       "winrm_username": "vagrant",
       "winrm_password": "vagrant",
-      "winrm_timeout": "12h",
+      "winrm_timeout": "18h",
       "winrm_port" : "5985",
       "shutdown_command": "a:/PackerShutdown.bat",
       "shutdown_timeout": "15m",
